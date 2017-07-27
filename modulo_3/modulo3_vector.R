@@ -25,9 +25,7 @@ library(rgdal)
 library(foreign)
 library(raster) 
 library(rgeos) 
-library(tmap) 
 library(dplyr) 
-library(maps)
 
 ### Leer un DBF: "read.dbf"
 df     <- read.dbf("vector/GNQ_contour_geo_buffer005.dbf")

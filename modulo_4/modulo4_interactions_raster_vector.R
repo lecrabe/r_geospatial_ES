@@ -19,17 +19,14 @@
 ##########################################################################################
 options(stringsAsFactors=FALSE)
 
-# setwd("C:/Users/dannunzio/Documents/countries/congo_brazza/formation_R/module_1/")
+setwd("/media/dannunzio/OSDisk/Users/dannunzio/Documents/R/formation_geospatiale/espanol/data/")
 getwd()
 
 library(rgdal) 
 library(foreign) 
 library(raster) 
 library(rgeos)
-library(tmap)
 library(dplyr)
-library(maps)
-
 
 ### Leer archivos
 raster <- raster("raster/bioko_uso_suelos.tif")

@@ -135,4 +135,6 @@ sp_df<-SpatialPointsDataFrame(
 # ######### Exportar en KML
 writeOGR(obj=sp_df,dsn="vector/mis_points.kml",layer="mis_points",driver = "KML")
 
+# ######### Exportar en Shapefile
+writeOGR(obj=sp_df,dsn="vector/mis_points.shp",layer="mis_points",driver = "ESRI Shapefile")
 
