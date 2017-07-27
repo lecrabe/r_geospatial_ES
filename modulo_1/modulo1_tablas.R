@@ -1,5 +1,5 @@
 ###########################################################################################
-################## módulo de gestión de tabla,  creación de una matriz de confusión #######
+################## m?dulo de gesti?n de tabla,  creaci?n de una matriz de confusi?n #######
 ###########################################################################################
 
 # Puntos cubiertos:
@@ -14,15 +14,6 @@
 # actualizado 2017/07/25
 # remi.dannunzio@fao.org
 ##########################################################################################
-
-##########################################################################################
-################## Options de base, paquets
-##########################################################################################
-options(stringsAsFactors=FALSE)
-
-# cambiar el camino hasta la carpeta de trabajo
-setwd("C:/Users/dannunzio/Documents/R/formation_geospatiale/espanol/data/")
-getwd()
 
 ### Leer una tabla: "<-" y "read.csv"
 df    <- read.csv("tablas/BIOKO_collectedData_earthaa_bioko_CE_2017_04_02_on_070417_114427_CSV.csv")
@@ -52,7 +43,7 @@ unique(df$map_class)
 levels(df$map_class)
 
 ### Changer le type d'une variable: fonction "as.XXXXX"
-### NB: plusieurs fonctions imbriquées, l'indentation est automatique
+### NB: plusieurs fonctions imbriqu?es, l'indentation est automatique
 
 (legend <- levels(as.factor(df$map_class)
                   )

@@ -13,20 +13,6 @@
 # remi.dannunzio@fao.org
 ##########################################################################################
 
-##########################################################################################
-################## Options de base, paquets
-##########################################################################################
-options(stringsAsFactors=FALSE)
-
-setwd("/media/dannunzio/OSDisk/Users/dannunzio/Documents/R/formation_geospatiale/espanol/data/")
-getwd()
-
-library(rgdal) 
-library(foreign)
-library(raster) 
-library(rgeos) 
-library(dplyr) 
-
 ### Leer un DBF: "read.dbf"
 df     <- read.dbf("vector/GNQ_contour_geo_buffer005.dbf")
 

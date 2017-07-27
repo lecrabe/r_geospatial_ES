@@ -14,17 +14,6 @@
 # remi.dannunzio@fao.org
 ##########################################################################################
 
-##########################################################################################
-################## Options de base, paquets
-##########################################################################################
-options(stringsAsFactors=FALSE)
-
-# Cambiar el camino
-# setwd("C:/Users/dannunzio/Documents/countries/congo_brazza/formation_R/module_1/")
-getwd()
-
-library(rgdal)
-library(raster)
 
 ### Leer un raster: "raster"
 raster <- raster("raster/bioko_uso_suelos.tif")
