@@ -14,20 +14,6 @@
 # remi.dannunzio@fao.org
 ##########################################################################################
 
-##########################################################################################
-################## Options de base, paquets
-##########################################################################################
-options(stringsAsFactors=FALSE)
-
-setwd("/media/dannunzio/OSDisk/Users/dannunzio/Documents/R/formation_geospatiale/espanol/data/")
-getwd()
-
-library(rgdal) 
-library(foreign) 
-library(raster) 
-library(rgeos)
-library(dplyr)
-
 ### Leer archivos
 raster <- raster("raster/bioko_uso_suelos.tif")
 poly   <- readOGR(dsn="vector/gaul_livel1.shp",
