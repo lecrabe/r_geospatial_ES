@@ -1,0 +1,5 @@
+map_code,map_area,map_edited_class,equal,proportional,adjusted,final
+1,253540,1_bosque,225,745,705,75
+2,34018,2_no_bosque,225,100,94,50
+100,2403,100_deforestacion,225,7,50,150
+10000,15998,10000_degradacion,225,47,50,150
