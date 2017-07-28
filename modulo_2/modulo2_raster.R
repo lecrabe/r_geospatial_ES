@@ -20,6 +20,10 @@ raster <- raster("raster/bioko_uso_suelos.tif")
 str(raster)
 extent(raster)
 
+### Resolucion raster en metros
+proj4string(raster)
+pixel <- res(raster)*111320
+
 # ######### Crear un extracto : "extent" y "crop"
 e    <- extent(8.5,8.6,3.2,3.6)
 rast <- crop(raster,e)
@@ -27,6 +31,14 @@ rast <- crop(raster,e)
 ######### Visualizar un raster : "plot"
 plot(rast)
 rast <- raster
+
+### Cuantos pixels de cada clase: "freq"
+valores <- data.frame(freq(raster))
+
+### Estadisticas de superficie para cada clase
+valores
+valores$area_ha <- valores$count*pixel[1]*pixel[2]/10000
+valores
 
 # ######### Puntos aleatorios sobre un raster: "sampleRandom"
 tmp <- sampleRandom(rast,1000,xy=TRUE)

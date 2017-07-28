@@ -5,7 +5,8 @@
 ##########################################################################################
 
 ######################## CAMBIAR EL CAMINO HASTA SU CARPETA DE TRABAJO
-setwd("/media/dannunzio/OSDisk/Users/dannunzio/Documents/R/formation_geospatiale/espanol/data/")
+#setwd("/media/dannunzio/OSDisk/Users/dannunzio/Documents/R/formation_geospatiale/espanol/data/")
+setwd("C:/Users/dannunzio/Documents/R/formation_geospatiale/espanol/data/")
 
 packages <- function(x){
   x <- as.character(match.call()[[2]])
